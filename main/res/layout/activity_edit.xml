@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditActivity">
+
+    <LinearLayout
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="70dp"
+                android:src="@drawable/person"
+                android:layout_height="70dp"/>
+
+            <EditText
+                android:id="@+id/noms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Nom"
+                android:layout_marginLeft="5dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@+id/image" />
+
+            <EditText
+                android:id="@+id/aliass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/noms"
+                android:gravity="center_vertical"
+                android:hint="Alias"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+
+
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/pouvoirs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:hint="Pouvoir"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/descriptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:hint="He is one of the founding members of the X-Men."
+            android:inputType="text"
+            android:minHeight="48dp" />
+
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/line"
+            android:layout_marginTop="15dp"
+            android:background="@color/black" />
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
